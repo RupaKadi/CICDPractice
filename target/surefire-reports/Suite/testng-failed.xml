@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Practiceframework.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Testing NewTestCase(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="Testmultiple"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Practiceframework.Project1.NewTestCase">
+        <methods>
+          <include name="Loginwebsite"/>
+          <include name="tearDown"/>
+          <include name="Test2"/>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- Practiceframework.Project1.NewTestCase -->
+    </classes>
+  </test> <!-- Testing NewTestCase(failed) -->
+</suite> <!-- Failed suite [Suite] -->
